@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Environment 04</title>
+    <link rel="stylesheet" href="env04.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="env04.js" defer></script>
+</head>
+
+<body>
+    <!-- NEW: colored layer that changes with the time of day -->
+    <div id="tint"></div>
+
+    <p id="intro"> Welcome to Skyarrow Bridge! Enjoy the view as you make your way to Castelia City!</p>
+
+    <!-- TOP ZONE: environmental things (clouds made with CSS, no images) -->
+    <div id="sky">
+        <div class="cloud" id="cloud1"></div>
+        <div class="cloud" id="cloud2"></div>
+        <div class="cloud" id="cloud3"></div>
+
+        <p id="caption"> A Tranquill and a Ducklett have stopped on the bridge to rest. Both are flying Pokemon found
+            in Unova. You should consider catching one before taking on the Castelia City Gym! </p>
+    </div>
+
+    <!-- MAIN ZONE: the main scene, arranged with flex -->
+    <div id="main-scene">
+        <div class="poke-card" id="tranquill-card">
+            <img id="tranquill" src="https://img.pokemondb.net/sprites/black-white/normal/tranquill.png" alt="Tranquill">
+            <p id="tranquill-text">Tranquill rests on the railing, keeping an eye on travelers crossing toward Castelia.</p>
+        </div>
+        <div class="poke-card" id="ducklett-card">
+            <img id="ducklett" src="https://img.pokemondb.net/sprites/black-white/normal/ducklett.png" alt="Ducklett">
+            <p id="ducklett-text">Ducklett waddles along the deck.</p>
+        </div>
+        <!-- NEW: Vullaby panel, hidden by default, shown at night (see setTime in env04.js) -->
+        <div class="poke-card" id="vullaby-card">
+            <img id="vullaby" src="https://img.pokemondb.net/sprites/black-white/normal/vullaby.png" alt="Vullaby">
+            <p id="vullaby-text">Vullaby circles above the bridge, eyeing the sleeping Pokemon.</p>
+        </div>
+    </div>
+
+    <!-- DATA LAYER: buttons reveal data stored in env04.js -->
+    <div id="data-panel">
+        <div id="data-buttons">
+            <button id="title-button">Location</button>
+            <button id="tranquill-button">Tranquill Info</button>
+            <button id="ducklett-button">Ducklett Info</button>
+            <button id="vullaby-button" style="display: none;">Vullaby Info</button>
+            <button id="rules-button">Bridge Rules</button>
+        </div>
+
+        <!-- NEW: this button cycles day -> sunset -> night -> day -->
+        <h3>Time of day</h3>
+        <div class="time-group">
+            <button id="time-button">Next: sunset</button>
+        </div>
+
+        <div id="environment-output">Click a button to learn about the bridge.</div>
+    </div>
+</body>
+
+</html>

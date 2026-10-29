@@ -1,0 +1,118 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    min-height: max(100vh, 75vw);
+}
+
+body {
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    background-attachment: scroll;
+}
+
+#intro {
+    width: fit-content;
+    height: 2.8vw;
+    line-height: 2.8vw;
+    margin: 0.6vw auto;
+    padding: 0 1.5vw;
+    font-size: 1vw;
+    background: rgba(40, 60, 90, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0.8vw;
+    color: white;
+}
+
+
+#sky {
+    height: 13vw;
+}
+
+#caption {
+    width: 70%;
+    margin: 0.6vw auto 0 auto;
+    padding: 0.5vw 1vw;
+    background: rgba(40, 60, 90, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0.8vw;
+    color: white;
+    text-align: center;
+    font-size: 0.9vw;
+    line-height: 1.3;
+}
+
+.cloud {
+    background: white;
+    border-radius: 5vw;
+    opacity: 0.8;
+    height: 2vw;
+}
+
+#cloud1 {
+    width: 8vw;
+    margin-left: 8%;
+    margin-top: 0.8vw;
+}
+
+#cloud2 {
+    width: 5vw;
+    margin-left: 55%;
+    margin-top: 0.4vw;
+}
+
+#cloud3 {
+    width: 4vw;
+    height: 1.2vw;
+    margin-left: 30%;
+    margin-top: 0.8vw;
+}
+
+#main-scene {
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 12.8vw;
+}
+
+.poke-card {
+    width: 15vw;
+    padding: 0.8vw;
+    background: rgba(40, 60, 90, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0.8vw;
+    text-align: center;
+    color: white;
+}
+
+.poke-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poke-card p {
+    margin: 0.4vw 0 0 0;
+    font-size: 0.85vw;
+    line-height: 1.3;
+}
+
+#tranquill {
+    width: 10vw;
+    margin-top: -1vw;
+    margin-bottom: -2vw;
+}
+
+#ducklett {
+    width: 9vw;
+    margin-top: -2.3vw;
+    margin-bottom: -2.3vw;
+}
+
+#ducklett-card {
+    margin-bottom: -5vw;
+}

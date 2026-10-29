@@ -1,0 +1,43 @@
+body {
+    background: #241b2f;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #f5f0ff;
+    text-align: center;
+}
+
+/* a little polaroid frame for Kaya */
+#kaya-photo {
+    width: 50%;
+    max-width: 300px;
+    background: #ffffff;
+    padding: 12px 12px 44px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: rotate(-3deg);
+    margin-top: 40px;
+}
+
+h1 {
+    color: #ff9a3c;
+    font-size: 40px;
+    font-family: "Fredoka", sans-serif;
+}
+
+button {
+    background: #9264b7;
+    color: #ffffff;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 22px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 999px;
+    margin: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #ff9a3c;
+    color: #241b2f;
+    transform: rotate(-4deg);
+}
